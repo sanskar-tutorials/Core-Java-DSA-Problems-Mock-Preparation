@@ -1,4 +1,4 @@
-package May19;
+package May20;
 
 public class NestedPrintPattern {
     /*
@@ -6,10 +6,10 @@ public class NestedPrintPattern {
     Que - 1 -> Print following pattern * ** *** **** 
     */
 
+    //Rahul Sen [No]
     public static void print1(int N){
-        for(int i = 0 ; i < N ; i++){
-            for(int j = 0 ; j < i ; j++){
-                System.out.print("*");
+        for(int i = 1 ; i < N ; i++){
+            for(int j = 1 ; j <= i ; j++){   System.out.print("*");
             }
             System.out.print(" ");
         }
@@ -32,7 +32,7 @@ public class NestedPrintPattern {
     */
     public static void rightTriangle(int N){
         for(int i = 1 ; i <= N ; i++){
-            for(int j = 0 ; j < i ; j++){
+            for(int j = 1 ; j <= i ; j++){
                 System.out.print("* ");
             }
             System.out.println();
@@ -88,9 +88,18 @@ public class NestedPrintPattern {
         }
     }
 
+    public static void pattern6(int N){
+         for(int i = 0 ; i < N ; i++){
+            for(int j = 0 ; j < N - i ; j++ ){
+                System.out.print("* ");
+            }
+            System.out.println();
+         }
+    }
+
 
     public static void main(String[] args) {
-        pattern5(5);
+        pattern4(5);
     }
 
 
