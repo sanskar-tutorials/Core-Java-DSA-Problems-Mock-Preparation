@@ -3,7 +3,6 @@ package Functions;
 public class nCr {
     public static int NcR(int n , int r){
         // code here
-        
         if(r > n) return 0;
         
         if(r == n - 1 ) return n;
