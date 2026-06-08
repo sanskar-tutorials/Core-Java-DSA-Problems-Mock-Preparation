@@ -29,8 +29,24 @@ public class MissingNumber {
         return N;
 
     }
+     
+    static void missingnumbers(int [] arr , int n){
+        int [] freq = new int[n + 1];
+
+        for(int i = 0 ; i < arr.length ; i++){
+            freq[arr[i]]++;
+        }
+
+        for(int i = 0 ; i < freq.length ; i++){
+             if(freq[i] == 0) System.out.print(i + " ");
+        }
+
+        //Return count of all the digits 
+        //Return count of digit which are repetative  / identify duplicates 
+    }
 
     public static void main(String[] args) {
-        
+        int [] arr = {0 , 1 , 2 , 3 , 5 ,5 ,6 , 6};
+        missingnumbers(arr , 8);
     }
 }
