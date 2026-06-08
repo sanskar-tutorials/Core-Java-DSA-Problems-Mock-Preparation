@@ -2,8 +2,8 @@ package Array.Greedy;
 
 
 
-//Time Complexity = 0(n);
-//Space Complexity = 0(1);  //instead of array you can use three variables , 5s , 10s , 20s
+//Time Complexity = O(n);
+//Space Complexity = O(1);  //instead of array you can use three variables , 5s , 10s , 20s
 
 public class LemonadeChange {
     static boolean lemonadeChange(int[] bills) {
